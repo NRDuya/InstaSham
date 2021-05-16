@@ -136,7 +136,8 @@ div[id^="post-"] {
   grid-template-rows: 5fr;
   width: 25%;
   margin: auto;
-  padding-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--grey);
 }
 
 /* LOGIN  */
@@ -206,17 +207,13 @@ div[id^="post-"] {
   grid-area: content;
   padding-top: 0.35em;
   padding-bottom: 0.35em;
-  width: 50%;
-  margin: auto;
   text-align: center;
   background-color: var(--grey);
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr;
-  grid-template-areas:
-    "photoinfo"
-    "comment-container";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "photoinfo comment-container";
 }
 
 #photo-container {
@@ -225,11 +222,6 @@ div[id^="post-"] {
   flex-direction: column;
   flex-wrap: wrap;
   width: auto;
-}
-
-#post-info {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 div[post-container] > div[id^="post-"] {
@@ -248,15 +240,28 @@ div[post-container] > div[id^="post-"] {
   align-content: center;
 }
 
+#post-description {
+  grid-area: description;
+  display: inline-block;
+}
+
+#post-info {
+  grid-area: post-info;
+  display: inline-block;
+  height: auto;
+}
+
 /* POST COMMENTS */
 #comments-container {
   grid-area: comment-container;
   display: grid;
   justify-self: stretch;
-  grid-template-rows: 75px auto;
+  grid-template-rows: 75px 75px 80px auto;
   grid-template-columns: 1fr;
   gap: 0.2rem;
   grid-template-areas:
+    "description"
+    "post-info"
     "comment-box"
     "comments";
   max-height: 80vh;
@@ -267,7 +272,6 @@ div[post-container] > div[id^="post-"] {
 #comments {
   grid-area: comments;
   overflow-y: auto;
-  height: 300px;
   display: flex;
   flex-flow: column nowrap;
   scroll-behavior: smooth;
@@ -327,6 +331,11 @@ div[id^="comment-"] {
   border-radius: 0.35rem;
   background-color: white;
   resize: none;
+}
+
+#comment-box-button {
+  background-color: var(--grey);
+  border-radius: 0.25rem;
 }
 
 /* ETC */

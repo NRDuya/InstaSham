@@ -3,18 +3,19 @@
 
 <div id="post-container">
     <div id="photo-container">
-        <img id="post-image" src="/{{currentPost.photopath}}" alt="Image">
         <div id="post-title">
             <h2>{{currentPost.title}}</h2>
         </div>
+        <img id="post-image" src="/{{currentPost.photopath}}" alt="Image">
+
+    </div>
+
+    <div id="comments-container">
+        <div id="post-description"><h6><strong>Description</strong></h6>{{currentPost.description}}</div>
         <div id="post-info">
             <p><span>Posted by: </span> <span id="post-author">{{currentPost.username}}</span></p>
             <p><span>Posted at: </span> <span id="post-date">{{currentPost.created}}</span></p>
         </div>
-        <div id="post-description"><h6><strong>Description</strong></h6>{{currentPost.description}}</div>
-    </div>
-
-    <div id="comments-container">
         <div id="comments">
             {{#each currentPost.comments}}
             {{> comment this}}

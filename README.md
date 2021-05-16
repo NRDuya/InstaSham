@@ -18,8 +18,7 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Build Instructions
 
-1. steps here
-2. npm install
+1. npm install
 
 ## Run Instructions
 
