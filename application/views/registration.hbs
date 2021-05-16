@@ -1,0 +1,50 @@
+<header>
+    <h1>Registration</h1>
+</header>
+
+<form id="registration-container" method="POST" action="/users/register"
+    enctype="application/x-www-form-urlencoded">
+    <div class="form-field">
+        <label>Username</label>
+        <input id="username" class="text-input" type="text" placeholder="Username" name="username" required />
+        <small></small>
+    </div>
+
+    <div class="form-field">
+        <label>Email</label>
+        <input id="email" class="text-input" type="email" placeholder="Email" name="email" required />
+        <small></small>
+    </div>
+
+    <div class="form-field">
+        <label>Password</label>
+        <input id="password" class="text-input" type="password" placeholder="Password" name="password" required />
+        <small></small>
+    </div>
+
+    <div class="form-field">
+        <label>Confirm Password</label>
+        <input id="cpassword" class="text-input" type="password" placeholder="Confirm Password" name="cpassword"
+            required />
+        </br>
+        <small></small>
+    </div>
+
+    <div>
+        <input type="checkbox" required />
+        <label> I Agree I am 13+ years of age</label>
+    </div>
+
+    <div>
+        <input type="checkbox" required />
+        <label><a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0"> I Accept Terms of Service and Privacy</a></label>
+    </div>
+
+    <button class="submit" type="submit">Submit</button>
+</form>
+
+<footer>
+
+</footer>
+
+<script src="/public/js/registration.js"></script>

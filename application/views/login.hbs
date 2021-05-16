@@ -1,0 +1,20 @@
+<header>
+    <h1>Login Form</h1>
+</header>
+
+<form id="login-container" method="POST" action="/users/login" enctype="application/x-www-form-urlencoded">
+    <div id="login-username">
+        <label>Username: </label>
+        <input type="text" placeholder="Username" name="username" required />
+    </div>
+
+    <div id="login-password">
+        <label>Password: </label>
+        <input type="password" placeholder="Password" name="password" required />
+    </div>
+
+<div id="login-options">
+    <button id="login-submit" class="submit" type="login-submit">Submit</button>
+    <a id="login-registration" href="registration">Registration</a>
+</div>
+</form>

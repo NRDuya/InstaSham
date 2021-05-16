@@ -1,0 +1,23 @@
+<header>
+    <h1>Post an Image</h1>
+</header>
+
+<form id="post-image-container" method="POST" enctype="multipart/form-data" action="/posts/createPost">
+    <label>Post title</label>
+    <input type="text" name="title" required />
+    <label>Post Description</label>
+    <textarea name="description" required></textarea>
+
+    <label>Select images</label>
+    <input type="file" accept="image/*" name="uploadImage" required />
+
+    <div>
+        <input type="checkbox" required />
+        <label><a href="">Accept the Acceptable Use Policy</a></label>
+    </div>
+
+    <button class="submit" type="submit">Submit</button>
+    <button class="submit" type="submit">Cancel</button>
+
+</form>
+

@@ -1,0 +1,16 @@
+<div id="banner">
+    <a href="/"><img id="logo" src="../../public/images/InstaSham-Logo.png" alt="InstaSham"></a>
+</div>
+<nav>
+    <div id="nav-bar">
+        <input type="text" id="search-text" />
+        <button id="search-button">Search</button>
+        <a id="nav-post" href="/postimage">Post</a>
+
+        {{#if logged}}
+        <a id="logout-button">Log Out</a>
+        {{else}}
+        <a id="login-button" href="/login">Log In</a>
+        {{/if}}
+    </div>
+</nav>
