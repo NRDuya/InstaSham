@@ -256,7 +256,7 @@ div[post-container] > div[id^="post-"] {
   grid-area: comment-container;
   display: grid;
   justify-self: stretch;
-  grid-template-rows: 75px 75px 80px auto;
+  grid-template-rows: 75px 100px 80px auto;
   grid-template-columns: 1fr;
   gap: 0.2rem;
   grid-template-areas:

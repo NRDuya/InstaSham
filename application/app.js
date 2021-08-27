@@ -36,7 +36,7 @@ app.engine(
 var mysqlSessionStore = new mysqlSession({/* using default options */}, require("./config/database"));
 
 app.use(sessions({
-    key: "csid",
+    key: "cs",
     secret: "this is a secret",
     store: mysqlSessionStore,
     resave: false,
