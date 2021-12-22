@@ -1,5 +1,5 @@
 {
-  "name": "csc317-termproject",
+  "name": "InstaSham",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "colors": "^1.4.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
     "express": "~4.16.1",
     "express-flash": "^0.0.2",
     "express-handlebars": "^5.3.0",

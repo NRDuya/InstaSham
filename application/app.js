@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -37,7 +38,7 @@ var mysqlSessionStore = new mysqlSession({/* using default options */}, require(
 
 app.use(sessions({
     key: "cs",
-    secret: "this is a secret",
+    secret: process.env.SESSION_SECRET,
     store: mysqlSessionStore,
     resave: false,
     saveUninitialized: false
